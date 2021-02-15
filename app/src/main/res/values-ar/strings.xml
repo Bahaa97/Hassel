@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Haseel</string>
+    <string name="confirm_order">تأكيد الطلب</string>
+    <string name="deliverTo">التوصيل إلى</string>
+    <string name="address_details">البيت ( طريق الحسن بن علي، حي الإزهار ، الرياض )</string>
+    <string name="paymentWay">آلية السداد</string>
+    <string name="walletBalance">رصيد المحفظة</string>
+    <string name="price">ر.س</string>
+    <string name="deliverTime">تاريخ و وقت التوصيل</string>
+    <string name="discount">كوبون/ كود خصم</string>
+    <string name="cart">سلة مشترياتك</string>
+    <string name="finishOrder">إتمام الطلب</string>
+    <string name="payMadaVisa">سداد بطاقة مدى/فيزا</string>
+    <string name="pleaseSelectCard">يرجى إختيار بطاقة لتأكيد السداد او اضافة بطاقة جديدة</string>
+    <string name="change">تغيير</string>
+    <string name="showItems">+5 منتجات</string>
+    <string name="addNewCard">إضافة بطاقة جديدة</string>
+    <string name="langauge">English</string>
+    <string name="selectDate">يرجى تحديد التاريخ الوقت</string>
+    <string name="totalAmount">القيمة الإجمالية :</string>
+    <string name="hideItem">إخفاء</string>
+    <string name="productTitle1">صندوق خيار</string>
+    <string name="productTitle2">صندوق الأهل</string>
+    <string name="productTitle3">صندوق البيت</string>
+    <string name="productDes1">كيلوا واحد فقط ، تقريبا ٨ الى ١٠ حبات</string>
+    <string name="productDes2">عدد ٦ صندوق الأهل ب ٤٨٣ ريال سعودي فقط</string>
+    <string name="productDes3">عدد ٦ صندوق الأهل ب 98 ريال سعودي فقط</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.bahaa.haseel.data.models.ProductDataModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@{data.image}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`x`+data.quantity}"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:fontFamily="@font/sf_book"
+            tools:text="X2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@+id/imageProduct"
+            app:layout_constraintTop_toTopOf="@+id/imageProduct" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_medium"
+            android:text="@{data.title}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/margin_10"
+            app:layout_constraintStart_toEndOf="@+id/txtQuantity"
+            app:layout_constraintTop_toTopOf="@+id/txtQuantity"
+            tools:text="صندوق خيار" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_book"
+            android:text="@{data.description}"
+            android:textColor="@color/geryDescription"
+            android:textSize="@dimen/_8ssp"
+            android:layout_marginTop="@dimen/margin_5"
+            app:layout_constraintStart_toStartOf="@+id/txtQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+            tools:text="صندوق خيار" />
+
+
+        <TextView
+            android:id="@+id/txtTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_book"
+            android:gravity="center"
+            android:text="@{data.price}"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="@dimen/margin_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageProduct" />
+
+
+        <TextView
+            android:id="@+id/priceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_book"
+            android:gravity="center"
+            android:text="@string/price"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginStart="@dimen/margin_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtTotalPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

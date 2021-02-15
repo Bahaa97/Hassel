@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.bahaa.haseel.data.models.PaymentWayDataModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@{data.selected ? @drawable/rounded_white_green_border_5dp:@drawable/rounded_gray_5dp}"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        tools:background="@drawable/rounded_white_green_border_5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{data.selected? data.imageSelected :data.image}" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            tools:src="@drawable/ic__mada_selected"
+            android:src="@{data.selected ? @drawable/ic__mada_selected :@drawable/ic_mada_un_selected}"
+            android:visibility="@{data.type.equals(`visa`)?View.VISIBLE :View.GONE}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_book"
+            android:text="جهاز شبكة"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/_8ssp"
+            android:visibility="@{data.type.equals(`wireless`)?View.VISIBLE :View.GONE}" />
+
+
+    </LinearLayout>
+</layout>

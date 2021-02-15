@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Haseel</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="deliverTo">Deliver To</string>
+    <string name="address_details">Home (طريق الحسن بن علي، حي الإزهار ، الرياض)</string>
+    <string name="paymentWay">Payment Way</string>
+    <string name="walletBalance">Wallet balance</string>
+    <string name="price">SAR</string>
+    <string name="deliverTime">Date and time of delivery</string>
+    <string name="discount">Coupon / discount code</string>
+    <string name="cart">Your shopping cart</string>
+    <string name="finishOrder">Finish Order</string>
+    <string name="payMadaVisa">Pay mada / Visa card</string>
+    <string name="pleaseSelectCard">Please select a card to confirm payment or add a new card</string>
+    <string name="change">Change</string>
+    <string name="showItems">+5 products</string>
+    <string name="addNewCard">Add a new card</string>
+    <string name="langauge">عربى</string>
+    <string name="selectDate">Please select date time</string>
+    <string name="totalAmount">Total Amount :</string>
+    <string name="hideItem">hide</string>
+    <string name="productTitle1">Cucumber box</string>
+    <string name="productTitle2">Parents Fund</string>
+    <string name="productTitle3">Home box</string>
+    <string name="productDes1">Only one kilo, approximately 8 to 10 beads</string>
+    <string name="productDes2">6 parent fund for 483 Saudi riyals only</string>
+    <string name="productDes3">6 parent fund for 98 Saudi riyals only</string>
+</resources>
